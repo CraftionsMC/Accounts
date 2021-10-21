@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/CraftionsMC/Accounts/issues"
   },
-  "homepage": "https://github.com/CraftionsMC/Accounts#readme"
+  "homepage": "https://github.com/CraftionsMC/Accounts#readme",
+  "dependencies": {
+    "@incodelang/accounts": "^1.0.17",
+    "@incodelang/accounts-client": "^1.0.11",
+    "express": "^4.17.1"
+  }
 }
