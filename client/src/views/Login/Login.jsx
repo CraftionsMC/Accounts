@@ -20,47 +20,56 @@ export default function Login() {
                 width: "30%",
                 height: "60%"
             }}>
-                <h1 className="title has-text-centered">Login</h1>
-                <h2 className="has-text-centered has-text-danger mb-4" id={"login_status"}/>
-                <div className="field">
-                    <label className="label">Username</label>
-                    <div className="control">
-                        <input type="text" className="input" placeholder="Username" id={"username"}/>
+                <form action={"javascript:void(0)"}>
+                    <h1 className="title has-text-centered">Login</h1>
+                    <h2 className="has-text-centered has-text-danger mb-4" id={"login_status"}/>
+                    <div className="field">
+                        <label className="label">Username</label>
+                        <div className="control">
+                            <input type="text" className="input" placeholder="Username" id={"username"}/>
+                        </div>
                     </div>
-                </div>
-                <div className="field">
-                    <label className="label">Password</label>
-                    <div className="control">
-                        <input type="password" className="input" placeholder="Password" id={"password"}/>
+                    <div className="field">
+                        <label className="label">Password</label>
+                        <div className="control">
+                            <input type="password" className="input" placeholder="Password" id={"password"}/>
+                        </div>
                     </div>
-                </div>
-                <div className="has-text-centered">
-                    <button className="button is-primary mt-5" type={"button"} onClick={() => {
-                        const username = document.getElementById('username').value;
-                        const password = document.getElementById('password').value;
+                    <div className="has-text-centered">
+                        <button className="button is-primary mt-5" type={"submit"} onClick={() => {
+                            const username = document.getElementById('username').value;
+                            const password = document.getElementById('password').value;
 
-                        const User = new WebClient("");
+                            const User = new WebClient("");
 
-                        User.login(username, password).then(x => {
-                            if (x) {
-                                User.createToken(username, password).then(t => {
-                                    localStorage.setItem("access", JSON.stringify({
-                                        username: username,
-                                        token: t
-                                    }))
-                                    window.location.assign("/")
-                                })
-                            } else {
-                                document.getElementById('login_status').innerText = "The Username or the password does not match."
-                            }
-                        })
+                            User.login(username, password).then(x => {
+                                if (x) {
+                                    User.createToken(username, password).then(t => {
+                                        localStorage.setItem("access", JSON.stringify({
+                                            username: username,
+                                            token: t
+                                        }))
+                                        const params = new URLSearchParams(location.search)
+                                        if (params.has("redirect")) {
+                                            window.location.assign(
+                                                params.get("redirect")
+                                            )
+                                        } else {
+                                            window.location.assign("/")
+                                        }
+                                    })
+                                } else {
+                                    document.getElementById('login_status').innerText = "The Username or the password does not match."
+                                }
+                            })
 
-                    }}>Login
-                    </button>
-                </div>
-                <div className="has-text-centered mt-5">
-                    <Link className=" has-text-link" to={"/register"}>Register</Link>
-                </div>
+                        }}>Login
+                        </button>
+                    </div>
+                    <div className="has-text-centered mt-5">
+                        <Link className=" has-text-link" to={"/register"}>Register</Link>
+                    </div>
+                </form>
             </div>
         )
     }

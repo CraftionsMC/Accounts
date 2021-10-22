@@ -48,7 +48,14 @@ export default function Register() {
                                         username: username,
                                         token: t
                                     }))
-                                    window.location.assign("/")
+                                    const params = new URLSearchParams(location.search)
+                                    if (params.has("redirect")) {
+                                        window.location.assign(
+                                            decodeURIComponent(params.get("redirect"))
+                                        )
+                                    } else {
+                                        window.location.assign("/")
+                                    }
                                 })
                             } else {
                                 document.getElementById('register_status').innerText = "The Username is already used!"

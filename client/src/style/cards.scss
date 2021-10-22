@@ -1,0 +1,31 @@
+/**
+ * @author Ben Siebert <ben@mctzock.de>
+ * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
+ */
+
+
+.cr-cards {
+  width: 100%;
+  text-align: center;
+
+  .cr-card {
+    cursor: pointer;
+    background-color: #111;
+    border-radius: 24px;
+    padding: 2rem;
+    margin: 2rem;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 320ms ease-in-out;
+
+    .cr-card-icon {
+      border-radius: 50%;
+      border: #222 4px solid;
+      width: 156px;
+    }
+
+    &:hover {
+      background-color: #0a0909;
+    }
+  }
+}
