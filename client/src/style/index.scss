@@ -3,6 +3,5 @@
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
-h1 {
-  color: red;
-}
+@import "~bulma/bulma";
+@import "~bulma-prefers-dark/bulma-prefers-dark";

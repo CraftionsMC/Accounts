@@ -6,10 +6,14 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import "./style/index.scss";
-console.log("Hello World")
+import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from "./Routes";
+
 ReactDOM.render(
     <>
-        <h1>Test</h1>
+        <Router>
+            <Routes/>
+        </Router>
     </>,
     document.getElementById('app')
 )
