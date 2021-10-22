@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e6a475-13a4-4483-98b0-8c6eaa367634" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/style/cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Dashboard/assets/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/style/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/bundle.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/bundle.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634836191773</updated>
       <workItem from="1634836195274" duration="7709000" />
-      <workItem from="1634848903714" duration="5344000" />
+      <workItem from="1634848903714" duration="7199000" />
     </task>
     <servers />
   </component>
