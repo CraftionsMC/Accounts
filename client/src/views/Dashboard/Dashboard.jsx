@@ -37,13 +37,15 @@ export default function Dashboard() {
                 </div>
                 <h1 className="title has-text-centered mt-6">Explore</h1>
                 <div className="cr-cards">
-                    <div className="cr-card">
+                    <div className="cr-card" onClick={() => {
+                        window.location.href = "https://short.craftions.net"
+                    }}>
                         <img
                             src={"/logo.png"}
-                            alt={"Logo"}
+                            alt={"URL Shorter"}
                             className={"cr-card-icon"}
                         />
-                        <h1 className="subtitle">Coming soon</h1>
+                        <h1 className="subtitle">URL Shorter</h1>
                     </div>
                 </div>
             </div>

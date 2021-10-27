@@ -59,7 +59,7 @@ export default function OAuth() {
                                 a.username,
                                 a.token
                             ).then(x => {
-                                window.location.assign(decodeURIComponent(redirect) + "?token=" + x);
+                                window.location.assign(decodeURIComponent(redirect) + "?token=" + x + "&username=" + a.username);
                             });
                         }}>Yes</Button>
                     </div>
