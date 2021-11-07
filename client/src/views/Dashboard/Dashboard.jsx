@@ -47,6 +47,36 @@ export default function Dashboard() {
                         />
                         <h1 className="subtitle">URL Shorter</h1>
                     </div>
+                    <div className="cr-card" onClick={() => {
+                        window.location.href = "https://upload.craftions.net"
+                    }}>
+                        <img
+                            src={"/logo.png"}
+                            alt={"URL Shorter"}
+                            className={"cr-card-icon"}
+                        />
+                        <h1 className="subtitle">Files</h1>
+                    </div>
+                    <div className="cr-card" onClick={() => {
+                        window.location.href = "https://analytics.craftions.net"
+                    }}>
+                        <img
+                            src={"/logo.png"}
+                            alt={"URL Shorter"}
+                            className={"cr-card-icon"}
+                        />
+                        <h1 className="subtitle">Analytics</h1>
+                    </div>
+                    <div className="cr-card" onClick={() => {
+                        window.location.href = "https://dash.hosting.craftions.net"
+                    }}>
+                        <img
+                            src={"/logo.png"}
+                            alt={"URL Shorter"}
+                            className={"cr-card-icon"}
+                        />
+                        <h1 className="subtitle">Hosting</h1>
+                    </div>
                 </div>
             </div>
         )
