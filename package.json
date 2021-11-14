@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/CraftionsMC/Accounts#readme",
   "dependencies": {
+    "@craftions/bulma-dark": "^0.1.0-beta.1",
     "@incodelang/accounts": "^1.0.17",
     "@incodelang/accounts-client": "^1.0.11",
     "babel-preset-react": "^6.24.1",
     "bulma": "^0.9.3",
-    "bulma-prefers-dark": "^0.1.0-beta.1",
     "express": "^4.17.1",
     "file-loader": "^6.2.0",
     "react": "^17.0.2",
